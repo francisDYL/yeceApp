@@ -23,7 +23,7 @@ class CreateApplicantsTable extends Migration
             $table->string('company')->nullable();
             $table->string('function')->nullable();
             $table->string('email')->unique();
-            $table->enum('reason_for_join', ['I propose a partnership', 'I want to be member', 'other']);
+            $table->enum('reason_for_join', ['I have a project','I propose a partnership', 'I want to be member', 'other']);
             $table->string('other_reason')->nullable();
             $table->string('phone_number');
             $table->string('nationality');

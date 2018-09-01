@@ -23,4 +23,5 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/apply', 'ApplicantController@index')->name('apply');
+Route::get('/apply', 'ApplicantController@index');
+Route::post('/apply', 'ApplicantController@store');
