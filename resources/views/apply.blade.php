@@ -5,19 +5,17 @@
 @section('navbar')
     @parent
 
-    <nav id=fixedTopNav class="navbar navbar-fixed-top main-navigation" itemscope
-         itemtype=https://schema.org/SiteNavigationElement
+    <nav id=fixedTopNav class="navbar navbar-fixed-top main-navigation" itemscope itemtype=https://schema.org/SiteNavigationElement
          role=navigation>
         <div class=container>
             <div class=navbar-header>
-                <button type=button class="navbar-toggle collapsed" data-toggle=collapse
-                        data-target=.#main-nav-collapse>
+                <button type=button class="navbar-toggle collapsed" data-toggle=collapse data-target=#main-nav-collapse>
                     <span class=sr-only>Toggle navigation</span>
                     <span class=ion-drag></span>
                 </button>
                 <div class=navbar-brand itemscope itemtype=https://schema.org/Organization>
                     <span itemprop=name class=sr-only>YECE</span>
-                    <a itemprop=url href="index.html">YECE</a>
+                    <a itemprop=url href=".">YECE</a>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id=main-nav-collapse>
@@ -100,6 +98,7 @@
             </ul>
         </div>
     </header>
+    <script src="assets/js/hideandshow.js"></script>
     <section id=apply class="section ">
         <div class=container>
             <header class=section-heading>
@@ -107,76 +106,102 @@
                 <span>@lang('apply.wewill')</span>
             </header>
             <div class=section-content>
+                @include('components.errors')
+                @include('components.success1')
                 <div class=row>
-                    <form action=".apply/create"
+                    <form action="apply"
                           class=contact-form id=applyForm method=post name=applyform role=form>
+                        @csrf
                         <div class="col-md-6 col-sm-5">
 
                             <div class=form-group>
-                                <input class=form-control id=first_name name=first_name placeholder="@lang('apply.firstname')" type=text required>
+                                <input class=form-control id=first_name name=first_name
+                                       placeholder="@lang('apply.firstname')" type=text required>
                             </div>
                             <div class=form-group>
-                                <input class=form-control id=last_name name=last_name placeholder="@lang('apply.lastname')" type=text required>
+                                <input class=form-control id=last_name
+                                       name=last_name placeholder="@lang('apply.lastname')"
+                                       type=text required>
                             </div>
                             <div class=form-group>
-                                <input class=form-control id=email name=email placeholder="@lang('apply.email')" type=email
+                                <input class=form-control id=email name=email placeholder="@lang('apply.email')"
+                                       type=email
                                        required>
                             </div>
 
                             <div class="form-group">
                                 @lang('apply.youare')
-                                <label class="radio-inline"><input type="radio" name="type"  checked> @lang('apply.student')</label>
-                                <label class="radio-inline"><input type="radio" name="type" >@lang('apply.professional')</label>
+                                <label class="radio-inline"><input id="type1" type="radio" name="type" value="student"
+                                                                   checked REQUIRED> @lang('apply.student')</label>
+                                <label class="radio-inline"><input id="type2" type="radio" name="type" value="professional">@lang('apply.professional')
+                                </label>
                             </div>
                             <div class=form-group>
-                                <input class=form-control id=phone name=phone placeholder="@lang('apply.phone')" type=tel required>
+                                <input class=form-control id=phone name=phone placeholder="@lang('apply.phone')"
+                                       type=tel required>
                             </div>
                             <div class=form-group>
                                 <label for="nationality"> @lang('apply.nationality') </label>
-                                <select id=nationality name="nationality" class="form-control">
-                                    <option selected>Select Menu</option>
-                                    <option value="volvo">Volvo</option>
-                                    <option value="fiat">Fiat</option>
-                                    <option value="audi">Audi</option>
+                                <select id=nationality name="nationality" class="form-control" REQUIRED>
+                                    @foreach($Countries as $key=>$value)
+                                        @if($key=='MA')
+                                            <option value="{{$key}}" selected> {{$value}}</option>
+                                        @else
+                                            <option value="{{$key}}"> {{$value}}</option>
+                                        @endif
+                                    @endforeach
                                 </select>
                             </div>
-                            <div id=contactFormResponse></div>
-                            <button id=cfsubmit type=submit class="btn btn-dark btn-block contact-submit">Give us a
-                                shout
-                            </button>
+
 
                         </div>
                         <div class="col-md-6 col-sm-7">
-                            <h5>Find us on Google map</h5>
-                            <div class=google-map>
-                                <div id=map></div>
-                            </div>
-                            <div class="row contact-info-wrap">
-                                <div class=col-sm-6>
-                                    <div>
-                                        <h5>Office Address</h5>
-                                        <address class=contact-info>
-                                            <span>590 Castro St</span>
-                                            <br>
-                                            <span>Mountain View</span>,
-                                            <span>CA</span> -
-                                            <span>94041</span>
-                                            <br>
-                                            <span>United States</span>
-                                        </address>
-                                    </div>
+                            <div id="ifstudent" name="ifstudent">
+                                <div class=form-group>
+                                    <input class=form-control id=university name=university
+                                           placeholder="@lang('apply.university')" type=text required>
                                 </div>
-                                <div class=col-sm-6>
-                                    <div>
-                                        <h5>Contact Information</h5>
-                                        <div class=contact-info>Local: ( 33 1) 42 68 53 00
-                                            <br>Mobile: ( 33 1) 42 68 53 01
-                                            <br>info@themewagon.com
-                                        </div>
-                                    </div>
+                                <div class=form-group>
+                                    <input class=form-control id=school_level_and_last_diploma
+                                           name=school_level_and_last_diploma
+                                           placeholder="@lang('apply.school_level_and_last_diploma')" type=text
+                                           required>
+                                </div>
+                                <div class=form-group>
+                                    <label for="reasonforjoin1"> @lang('apply.reasonforjoin') </label>
+                                    <select id=reasonforjoin1 name="reasonforjoin1" class="form-control" REQUIRED>
+                                        <option value="I have a project">@lang('apply.ihaveaproject')</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div id="ifprofessional" name="ifprofessional">
+                                <div class=form-group>
+                                    <input class=form-control id=company name=company
+                                           placeholder="@lang('apply.company')" type=text required>
+                                </div>
+                                <div class=form-group>
+                                    <input class=form-control id=function name=function
+                                           placeholder="@lang('apply.function')" type=text required>
+                                </div>
+                                <div class=form-group>
+                                    <label for="reasonforjoin2"> @lang('apply.reasonforjoin') </label>
+                                    <select id=reasonforjoin2 name="reasonforjoin2" class="form-control" required>
+                                        <option value="I propose a partnership" selected>@lang('apply.iproposepartnership')</option>
+                                        <option value="I want to be member">@lang('apply.iwantobeamember')</option>
+                                        <option value="other">@lang('apply.other')</option>
+                                    </select>
+                                </div>
+                                <div class=form-group id="ifother" name="ifother">
+                                    <label for="otherreason"> @lang('apply.otherreason') </label>
+                                    <input class=form-control id=otherreason name=otherreason
+                                           placeholder="@lang('apply.other')" type=text >
                                 </div>
                             </div>
                         </div>
+
+                        <button id=cfsubmit type=submit
+                                class="btn btn-dark btn-block btn-lg contact-submit">@lang('nav.apply')
+                        </button>
                     </form>
                 </div>
 

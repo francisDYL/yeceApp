@@ -24,12 +24,15 @@ return [
     'function' => 'Votre Fonction',
     'reasonforjoin' => 'Pourquoi voulez-vous nous rejoindre ?',
     'otherreason' => 'Autre raison de nous rejoindre :',
+    'university' => 'Votre université',
+    'school_level_and_last_diploma' => 'Niveau Scholaire et dernier Diplôme',
     'email' => 'Adresse E-Mail',
     'phone' => 'Numéro de Téléphone',
     'nationality' => 'Nationalité',
     'ihaveaproject' => 'J\'ai un Projet',
-    'iproposepartnership' => 'je propose un partenariat',
+    'iproposepartnership' => 'Je propose un partenariat',
     'iwantobeamember' => 'Je veux être un membre',
     'other' => 'Autre raison',
+    'addsuccess' => 'Votre candidature a été enregistré correctement. Courage pour la suite.',
 
 ];

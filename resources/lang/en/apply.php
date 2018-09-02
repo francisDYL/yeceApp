@@ -24,6 +24,8 @@ return [
     'function' => 'Your Function',
     'reasonforjoin' => 'Why do you want to join us ?',
     'otherreason' => 'Other reason to join us :',
+    'university' => 'Your university',
+    'school_level_and_last_diploma' => 'School Level and Last Diploma',
     'email' => 'E-Mail Address',
     'phone' => 'Phone Number',
     'nationality' => 'Nationality',
@@ -31,5 +33,6 @@ return [
     'iproposepartnership' => 'I propose a partnership',
     'iwantobeamember' => 'I want to be a member',
     'other' => 'Other reason',
+    'addsuccess' => 'Your application has been registered correctly. Courage for the continuation.',
 
 ];

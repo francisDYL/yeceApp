@@ -57,7 +57,7 @@
     <div class=container>
         <div class=row>
             <div class="col-md-3 col-sm-4">
-                <p class="copyright text-xs-center">&copy; 2015 Your company name</p>
+                <p class="copyright text-xs-center">Copyright © YECE App 2018</p>
             </div>
             <div class="col-md-5 col-sm-4">
                 <ul class=footer-social-block>
