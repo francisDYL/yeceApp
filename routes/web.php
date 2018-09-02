@@ -21,7 +21,7 @@ Route::get('locale/{locale}', function ($locale) {
 });
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index');
 
 Route::get('/apply', 'ApplicantController@index');
 Route::post('/apply', 'ApplicantController@store');
