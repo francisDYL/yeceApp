@@ -21,5 +21,8 @@ return [
     'blog' => 'Blog',
     'contact'=> 'Nous Contacter',
     'apply' => 'Postuler',
+    'lang' => 'Langue',
+    'english' => 'Anglais',
+    'french' => 'Français'
 
 ];

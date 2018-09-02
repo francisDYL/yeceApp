@@ -22,44 +22,50 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li>
                         <a href="#about-us" itemprop=url>
-                            <span itemprop=name>About</span>
+                            <span itemprop=name>@lang('nav.about')</span>
                         </a>
                     </li>
                     <li>
                         <a href="#services" itemprop=url>
-                            <span itemprop=name>Services</span>
+                            <span itemprop=name>@lang('nav.service')</span>
                         </a>
                     </li>
                     <li>
                         <a href="#portfolio" itemprop=url>
-                            <span itemprop=name>Portfolio</span>
+                            <span itemprop=name>@lang('nav.portfolio')</span>
                         </a>
                     </li>
                     <li>
                         <a href="#team" itemprop=url>
-                            <span itemprop=name>Team</span>
+                            <span itemprop=name>@lang('nav.team')</span>
                         </a>
                     </li>
                     <li>
                         <a href="#pricing" itemprop=url>
-                            <span itemprop=name>Pricing</span>
+                            <span itemprop=name>@lang('nav.pricing')</span>
                         </a>
                     </li>
                     <li>
                         <a href="#blog" itemprop=url>
-                            <span itemprop=name>Blog</span>
+                            <span itemprop=name>@lang('nav.blog')</span>
                         </a>
                     </li>
                     <li>
                         <a href="#contact" itemprop=url>
-                            <span itemprop=name>Contact</span>
+                            <span itemprop=name>@lang('nav.contact')</span>
                         </a>
                     </li>
                     <li>
                         <a href="apply" itemprop=url>
-                            <span itemprop=name>Apply</span>
+                            <span itemprop=name>@lang('nav.apply')</span>
                         </a>
                     </li>
+                    <li class=dropdown><a href="" class=dropdown-toggle data-toggle=dropdown>@lang('nav.lang')</a>
+                            <ul class=dropdown-menu>
+                                <li><a href="locale/fr">@lang('nav.french')</a></li>
+                                <li><a href="locale/en">@lang('nav.english')</a></li>
+                            </ul>
+                        </li>
                 </ul>
             </div>
         </div>
