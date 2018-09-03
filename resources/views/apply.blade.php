@@ -15,7 +15,9 @@
                 </button>
                 <div class=navbar-brand itemscope itemtype=https://schema.org/Organization>
                     <span itemprop=name class=sr-only>YECE</span>
-                    <a itemprop=url href=".">YECE</a>
+                    <a itemprop=url href=".">
+                    <img class="img-responsive center-block" src="assets/images/Logo-YECE.png">
+                    </a>
                 </div>
             </div>
             <div class="collapse navbar-collapse" id=main-nav-collapse>
@@ -31,29 +33,20 @@
                         </a>
                     </li>
                     <li>
-                        <a href=".#portfolio" itemprop=url>
-                            <span itemprop=name>@lang('nav.portfolio')</span>
-                        </a>
-                    </li>
-                    <li>
                         <a href=".#team" itemprop=url>
                             <span itemprop=name>@lang('nav.team')</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=".#pricing" itemprop=url>
-                            <span itemprop=name>@lang('nav.pricing')</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href=".#blog" itemprop=url>
-                            <span itemprop=name>@lang('nav.blog')</span>
                         </a>
                     </li>
                     <li>
                         <a href=".#contact" itemprop=url>
                             <span itemprop=name>@lang('nav.contact')</span>
                         </a>
+                    </li>
+                    <li class=dropdown><a href="" class=dropdown-toggle data-toggle=dropdown>@lang('nav.lang')</a>
+                            <ul class=dropdown-menu>
+                                <li><a href="locale/fr">@lang('nav.french')</a></li>
+                                <li><a href="locale/en">@lang('nav.english')</a></li>
+                            </ul>
                     </li>
                 </ul>
             </div>
@@ -62,36 +55,36 @@
 @endsection
 
 @section('content')
-    <header id=header class="header-wrapper home-parallax home-fade dark-bg slider-classic">
+<header id=header class="header-wrapper home-parallax home-fade dark-bg slider-classic">
         <div class="header-wrapper-inner flexslider">
             <ul class=slides>
-                <li style="background-image: url(assets/images/intro/01.jpg)">
+                <li style="background-image: url(assets/images/intro/intro1.jpg)">
                     <div class=color-overlay></div>
                     <div class=intro-wrapper>
                         <div class=intro>
-                            <h1>To Begin, Begin</h1>
-                            <p>Thats How My Life Rolls</p>
-                            <a href="#services" class="btn btn-default-o onPageNav">Our Services</a>
+                            <h1>@lang('intro.intro1Title')</h1>
+                            <p>@lang('intro.intro1SubTitle')</p>
+                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(assets/images/intro/08.jpg)">
+                <li style="background-image: url(assets/images/intro/intro2.jpg)">
                     <div class=intro-wrapper>
                         <div class=color-overlay></div>
                         <div class=intro>
-                            <h1>We are awsome</h1>
-                            <p>Thats How My Life Rolls</p>
-                            <a href="#services" class="btn btn-default-o onPageNav">Our Services</a>
+                            <h1>@lang('intro.intro2Title')</h1>
+                            <p>@lang('intro.intro2SubTitle')</p>
+                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
-                <li style="background-image: url(assets/images/intro/05.jpg)">
+                <li style="background-image: url(assets/images/intro/intro3.jpg)">
                     <div class=intro-wrapper>
                         <div class=color-overlay></div>
                         <div class=intro>
-                            <h1>To Begin, Begin</h1>
-                            <p>Thats How My Life Rolls</p>
-                            <a href="#services" class="btn btn-default-o onPageNav">Our Services</a>
+                            <h1>@lang('intro.intro3Title')</h1>
+                            <p>@lang('intro.intro3SubTitle')</p>
+                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
@@ -203,12 +196,6 @@
                                 class="btn btn-dark btn-block btn-lg contact-submit">@lang('nav.apply')
                         </button>
                     </form>
-                </div>
-
-                <div class="links">
-                    <a href="locale/en">English</a>
-                    <a href="locale/fr">French</a>
-                    <a href="locale">@lang('home.check')</a>
                 </div>
             </div>
 

@@ -3297,3 +3297,7 @@ blockquote p {
 .four-o-four .four-o-four-inner h1 {
     font-weight: 700
 }
+
+.email{
+    text-transform: none;
+}

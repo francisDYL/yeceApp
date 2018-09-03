@@ -204,7 +204,7 @@ $(document).ready(function () {
             var e = {
                 zoom: 11,
                 scrollwheel: !1,
-                center: new google.maps.LatLng(40.67, -73.94),
+                center: new google.maps.LatLng(33.57, -7.65),
                 styles: [{
                     featureType: "water",
                     elementType: "geometry",
@@ -257,7 +257,7 @@ $(document).ready(function () {
                     stylers: [{color: "#fefefe"}, {lightness: 17}, {weight: 1.2}]
                 }]
             }, t = document.getElementById("map"), i = new google.maps.Map(t, e);
-            new google.maps.Marker({position: new google.maps.LatLng(40.67, -73.94), map: i, title: "Snazzy!"})
+            new google.maps.Marker({position: new google.maps.LatLng(33.57, -7.65), map: i, title: "Snazzy!"})
         }
     }
 
