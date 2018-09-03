@@ -24,7 +24,7 @@ return [
         'address'     => null,
 
         'logo'        => [
-            'path'   => '%PUBLIC%/yeceApp/public/assets/images/Logo-YECE.png',
+            'path'   => '%PUBLIC%/assets/images/Logo-YECE.png',
             'width'  => '',
             'height' => '',
         ],
