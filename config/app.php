@@ -152,6 +152,8 @@ return [
          * Package Service Providers...
          */
         Monarobase\CountryList\CountryListServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Snowfire\Beautymail\BeautymailServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -211,7 +213,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Countries' => Monarobase\CountryList\CountryListFacade::class,
-
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];
