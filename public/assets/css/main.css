@@ -561,7 +561,9 @@ p.led:first-letter {
 .dark-bg h1,
 .dark-bg h2,
 .dark-bg h3 {
-    color: #fff
+    color: #fff;
+    font-weight: bolder;
+    background-color: rgba(green, green, green, 0.1);
 }
 
 blockquote p {
@@ -1005,10 +1007,12 @@ blockquote p {
 }
 
 .header-wrapper .header-wrapper-inner .intro p {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(247, 238, 238, 0.75);
     letter-spacing: 4px;
     margin-bottom: 80px;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(green, green, green, 0.1)
 }
 
 @media only screen and (max-width:992px) {

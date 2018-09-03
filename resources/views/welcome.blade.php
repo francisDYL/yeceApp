@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <figure class=why-us-image>
-                    <img class="img-responsive center-block hidden-xs" src="assets/images/about-us/association.png">
+                    <img class="img-responsive center-block hidden-xs" src="assets/images/about-us/association.jpeg">
                 </figure>
                 
         </div>
@@ -167,44 +167,42 @@
         <div class=container>
             <header class=section-heading>
                 <h2>@lang('services.title')</h2>
-                <span>We plan, design, build and market high quality websites</span>
+                <span>@lang('services.subTitle')</span>
             </header>
             <div class=section-content>
                 <div class=row>
                     <div class=col-sm-4>
                         <div class=service>
-                            <div class="service-icon text-center">
+                           <!-- <div class="service-icon text-center">
                                 <span class=ion-ios-albums-outline></span>
                             </div>
                             <div class=about-service>
                                 <h4 class=text-center>Responsive Design</h4>
                                 <p class=text-center>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
                                     ex eget sollicitudin eget.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class=col-sm-4>
                         <div class=service>
                             <div class="service-icon text-center">
-                                <span class=ion-ios-americanfootball-outline></span>
+                            <img src="assets/images/why-choose-us/service.jpg">
                             </div>
                             <div class=about-service>
-                                <h4 class=text-center>Brand Identity</h4>
-                                <p class=text-center>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
-                                    ex eget sollicitudin eget.</p>
+                                <p class=text-center>@lang('services.content')</p>
                             </div>
                         </div>
                     </div>
                     <div class=col-sm-4>
                         <div class=service>
-                            <div class="service-icon text-center">
+                           <!-- <div class="service-icon text-center">
                                 <span class=ion-ios-game-controller-b-outline></span>
                             </div>
                             <div class=about-service>
                                 <h4 class=text-center>Game Development</h4>
                                 <p class=text-center>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
                                     ex eget sollicitudin eget.</p>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -221,51 +219,18 @@
     <section id=portfolio class="section portfolio">
         <div class=container>
             <header class=section-heading>
-                <h2>Recent Projects</h2>
-                <span>Successful projects,happy clients and great results</span>
+                <h2>@lang('services.projectTitle')</h2>
+                <span>@lang('services.projectSubTitle')</span>
             </header>
-            <div class=section-content>
-                <div class=main_content>
-                    <div class=isotop-filter id=filters>
-                        <button type=button class="btn btn-isotop is-checked" data-filter=*>All</button>
-                        <button type=button class="btn btn-isotop" data-filter=.design>Web</button>
-                        <button type=button class="btn btn-isotop" data-filter=.wordpress>WordPress</button>
-                        <button type=button class="btn btn-isotop" data-filter=.marketing>Marketing</button>
-                        <button type=button class="btn btn-isotop" data-filter=.brandidentity>Brand Identity</button>
-                    </div>
-                </div>
-            </div>
         </div>
-        <div class=portfolio-grid>
-            <ul id=da-thumbs class="da-thumbs isotope">
-                <li data-category=design class=design>
-                    <a href="portfolio__single.html">
-                        <img src="assets/images/work/01.jpg">
-                        <div class=portfolio-detail-overlay>
-                            <div class=middle-align-wrap>
-                                <div class=middle-align-cell>
-                                    <h4>Corporate Website</h4>
-                                    <span>Webdesign</span>
-                                </div>
+        <div class=service>
+                            <div class="service-icon text-center">
+                            <img src="assets/images/why-choose-us/casaminnov.jpg">
+                            </div>
+                            <div class=about-service>
+                                <p class=text-center>@lang('services.projectContent')</p>
                             </div>
                         </div>
-                    </a>
-                </li>
-                <li data-category=marketing class=marketing>
-                    <a href="">
-                        <img src="assets/images/work/02.jpg">
-                        <div class=portfolio-detail-overlay>
-                            <div class=middle-align-wrap>
-                                <div class=middle-align-cell>
-                                    <h4>Corporate Website</h4>
-                                    <span>Webdesign</span>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </li>
-            </ul>
-        </div>
     </section>
     <section id=team class="section team">
         <div class=container>
@@ -390,25 +355,25 @@
             <div class=section-content>
                 <div id=client-carousel class=owl-carousel>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo01.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/compagny.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo02.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/ong.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo03.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/Logo-YECE.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo04.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/phd.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo02.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/school.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo03.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/ong.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/c_logo04.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/compagny.png">
                     </div>
                 </div>
             </div>
@@ -461,8 +426,8 @@
                             <div class=col-sm-6>
                                 <div>
                                     <h5>@lang('contact.info')</h5>
-                                    <div class=contact-info>Local: ( +2112) x xx xx xx xx
-                                        <br>Mobile: (+212) x xx xx xx xx
+                                    <div class=contact-info>@lang('contact.local'): ( +2112) x xx xx xx xx
+                                        <br>@lang('contact.mobile'): (+212) x xx xx xx xx
                                         <br>yeceafrica@gmail.com</div>
                                 </div>
                             </div>
