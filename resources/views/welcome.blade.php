@@ -349,9 +349,13 @@
             </div>
         </div>
     </section>
-    
+            
     <div id=clients class="section clients overlay-1">
         <div class=container>
+            <header class=section-heading-invert>
+                <h2>@lang('testify.partners')</h2>
+            </header>
+
             <div class=section-content>
                 <div id=client-carousel class=owl-carousel>
                     <div class="client-image item">
@@ -359,9 +363,6 @@
                     </div>
                     <div class="client-image item">
                         <img class="img-responsive center-block" src="assets/images/clients/ong.png">
-                    </div>
-                    <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/Logo-YECE.png">
                     </div>
                     <div class="client-image item">
                         <img class="img-responsive center-block" src="assets/images/clients/phd.png">

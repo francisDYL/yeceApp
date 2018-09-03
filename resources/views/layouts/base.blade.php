@@ -89,7 +89,8 @@
             <div class="col-md-4 col-sm-4">
                 <div class="footer-menu text-xs-center">
                     <a href="#">Privacy Policy</a> |
-                    <a>Terms &amp; Conditions</a>
+                    <a>Terms &amp; Conditions</a> |
+                   <span class="undesired"> Template by <a href="https://themewagon.com">ThemeWagon</a></span>
                 </div>
             </div>
         </div>
