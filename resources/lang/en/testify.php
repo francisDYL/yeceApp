@@ -10,5 +10,5 @@ return [
     'testify4'=>'I learned to write a business plan and I understood the importance of having it when launching a project ',
     'testify5'=>'These are the exchanges with other project leaders who have marked me during this event ',
     'testify6'=>'during this event, I was able to strengthen my personal qualities: self-esteem, respect for others, endurance and I learned the basics about entrepreneurship',
-    'partners'=>'Our Partners'
+    'partners'=>'The projects we supervise'
 ];
