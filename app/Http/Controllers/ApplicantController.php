@@ -15,10 +15,10 @@ class ApplicantController extends Controller
     public function index()
     {
         $countryList=new CountryList();
-        if(Session::get('locale')=='fr'){
-            $countries=$countryList->getList('fr','php');
-        }else{
+        if(Session::get('locale')=='en'){
             $countries=$countryList->getList('en','php');
+        }else{
+            $countries=$countryList->getList('fr','php');
         }
 
         return view('apply', ["Countries"=>$countries]);
@@ -52,12 +52,12 @@ class ApplicantController extends Controller
 
         $applicant->save();
         $request->session()->flash('success', trans('apply.addsuccess')." ".$applicant->last_name);
-        //dd($request->session());
+        //penser à faire du refactoring ici
         $countryList=new CountryList();
-        if(Session::get('locale')=='fr'){
-            $countries=$countryList->getList('fr','php');
-        }else{
+        if(Session::get('locale')=='en'){
             $countries=$countryList->getList('en','php');
+        }else{
+            $countries=$countryList->getList('fr','php');
         }
 
         return view('apply', ["Countries"=>$countries]);

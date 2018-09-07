@@ -9,9 +9,8 @@ use Illuminate\Http\Request;
 
 class MailController extends Controller
 {
-    //
     public function mailus(ContactFormRequest $request){
-        //dd($request);
+        
         $validated = $request->validated();
         $data = [];
 
@@ -19,7 +18,7 @@ class MailController extends Controller
         $data['email'] = $validated['email'];
         $data['msg'] = $validated['message'];
 
-        // Mail delivery logic goes here
+        // Mail delivery logic here
         $beautymail = app()->make(\Snowfire\Beautymail\Beautymail::class);
         $beautymail->send('emails.contact', $data, function($message) use ($data) {
             $message
@@ -28,8 +27,7 @@ class MailController extends Controller
                 ->subject('YECE Site: Making contact with a Visitor!');
         });
 
-        //flash($validated['name'].trans('messagesent'))->success();
-        //app('debugbar')->warning('Watch out..');
+        
         logger()->info("Mailing Us From ".request()->ip(),$validated);
         return $validated['name']." ".trans('home.messagesent');
     }
