@@ -35,9 +35,9 @@
 </head>
 
 <body data-spy=scroll data-target=#main-nav-collapse data-offset=100>
-<!--<div class=page-loader>
+<div class=page-loader>
     <div class=loader>Loading...</div>
-</div>-->
+</div>
 <a href="#toptop"></a>
 @section('navbar')
 

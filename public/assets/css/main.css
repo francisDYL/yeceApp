@@ -423,7 +423,7 @@ a:focus {
     color: #fff;
     margin-bottom: 30px;
     margin-top: 0;
-    text-transform: capitalize;
+   /* text-transform: capitalize;*/
     font-size: 22px
 }
 
@@ -435,7 +435,7 @@ a:focus {
     color: #fff;
     margin: 0 30px 0 0;
     line-height: 30px;
-    text-transform: capitalize;
+   /* text-transform: capitalize;*/
     font-size: 16px
 }
 

@@ -5,8 +5,8 @@ return [
 
     'Title' => 'A Propos de Nous',
     'SubTitle' => 'Tout ce que vous devez savoir sur notre association',
-    'firstThing'=> 'YECE est une association à but non lucratif offrant un accompagnement complet, dans tous les secteurs d’activités ainsi que dans l’ensemble des fonctions opérationnelles pour des projets à destination de l’Afrique Sub Saharienne.',
-    'secondThing'=> 'Notre mission est d\'accompagner les jeunes entrepreneurs  qui ont des projets à forte valeur ajoutée pour l’environnement économique et social pour l’Afrique Sub saharienne.',
+    'firstThing'=> 'YECE est une association à but non lucratif offrant un accompagnement complet, dans tous les secteurs d’activités ainsi que dans l’ensemble des fonctions opérationnelles pour des projets à destination de l’Afrique.',
+    'secondThing'=> 'Notre mission est d\'accompagner les jeunes entrepreneurs  qui ont des projets à forte valeur ajoutée pour l’environnement économique et social pour l’Afrique.',
     'goalTitle'=>'Nos Objectifs',
     'goalSubTitle'=>'Nous avons de grands rêves',
     'dream1Title'=>'Grandir',

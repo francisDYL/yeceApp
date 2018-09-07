@@ -5,8 +5,8 @@ return [
 
     'Title' => 'About Us',
     'SubTitle' => 'Everything you need to know about our Association',
-    'firstThing'=> 'YECE is a non-profit organization offering comprehensive support in all sectors of activity as well as in all operational functions for projects in Sub-Saharan Africa.',
-    'secondThing'=> 'Our mission is to support young entrepreneurs who have projects with high added value for the economic and social environment for Sub-Saharan Africa.',
+    'firstThing'=> 'YECE is a non-profit organization offering comprehensive support in all sectors of activity as well as in all operational functions for projects in Africa.',
+    'secondThing'=> 'Our mission is to support young entrepreneurs who have projects with high added value for the economic and social environment for Africa.',
     'goalTitle'=>'Our goals',
     'goalSubTitle'=>'We have big dreams',
     'dream1Title'=>'Grow Up',

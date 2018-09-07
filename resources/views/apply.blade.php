@@ -64,7 +64,7 @@
                         <div class=intro>
                             <h1>@lang('intro.intro1Title')</h1>
                             <p>@lang('intro.intro1SubTitle')</p>
-                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
+                            <a href="apply" class="btn btn-default-o btn-lg onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
@@ -74,7 +74,7 @@
                         <div class=intro>
                             <h1>@lang('intro.intro2Title')</h1>
                             <p>@lang('intro.intro2SubTitle')</p>
-                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
+                            <a href="apply" class="btn btn-default-o btn-lg onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
@@ -84,7 +84,7 @@
                         <div class=intro>
                             <h1>@lang('intro.intro3Title')</h1>
                             <p>@lang('intro.intro3SubTitle')</p>
-                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
+                            <a href="apply" class="btn btn-default-o btn-lg onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>

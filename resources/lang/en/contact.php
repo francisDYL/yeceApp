@@ -3,7 +3,7 @@
 return [
 
 
-'street'=>'inconnu',
+'street'=>'6 rue Al Kaid El Achtar Maarif',
 'city'=>'Casablanca',
 'country'=>'Morocco',
 'office'=>'Office Address',

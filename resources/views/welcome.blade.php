@@ -33,6 +33,11 @@
                         </a>
                     </li>
                     <li>
+                        <a href="apply" itemprop=url>
+                            <span itemprop=name>@lang('nav.apply')</span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="#team" itemprop=url>
                             <span itemprop=name>@lang('nav.team')</span>
                         </a>
@@ -42,11 +47,7 @@
                             <span itemprop=name>@lang('nav.contact')</span>
                         </a>
                     </li>
-                    <li>
-                        <a href="apply" itemprop=url>
-                            <span itemprop=name>@lang('nav.apply')</span>
-                        </a>
-                    </li>
+                    
                     <li class=dropdown><a href="" class=dropdown-toggle data-toggle=dropdown>@lang('nav.lang')</a>
                             <ul class=dropdown-menu>
                                 <li><a href="locale/fr">@lang('nav.french')</a></li>
@@ -69,7 +70,7 @@
                         <div class=intro>
                             <h1>@lang('intro.intro1Title')</h1>
                             <p>@lang('intro.intro1SubTitle')</p>
-                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
+                            <a href="apply" class="btn btn-default-o btn-lg onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
@@ -79,7 +80,7 @@
                         <div class=intro>
                             <h1>@lang('intro.intro2Title')</h1>
                             <p>@lang('intro.intro2SubTitle')</p>
-                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
+                            <a href="apply" class="btn btn-default-o btn-lg onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
@@ -89,7 +90,7 @@
                         <div class=intro>
                             <h1>@lang('intro.intro3Title')</h1>
                             <p>@lang('intro.intro3SubTitle')</p>
-                            <a href="apply" class="btn btn-default-o onPageNav">@lang('nav.apply')</a>
+                            <a href="apply" class="btn btn-default-o btn-lg onPageNav">@lang('nav.apply')</a>
                         </div>
                     </div>
                 </li>
@@ -123,8 +124,7 @@
             </div>
         </div>
     </section>
-
-    <section id=why-choose-us class="section why-choose-us">
+    <section id=why-choose-us class="why-choose-us">
         <div class=container>
             <header class=section-heading>
                 <h2>@lang('aboutus.goalTitle')</h2>
@@ -133,9 +133,9 @@
             <div class=section-content>
                 <div class=row>
                     <div class="col-sm-3 why-explain-wrap">
-                        <h4>@lang('aboutus.dream1Title')</h4>
+                        <h4>@lang('aboutus.dream4Title')</h4>
                         <div class="why-explain top top-1">
-                            <p>@lang('aboutus.dream1')</p>
+                            <p>@lang('aboutus.dream4')</p>
                         </div>
                     </div>
                     <div class="col-sm-3 why-explain-wrap">
@@ -151,14 +151,14 @@
                         </div>
                     </div>
                     <div class="col-sm-3 why-explain-wrap">
-                        <h4>@lang('aboutus.dream4Title')</h4>
+                        <h4>@lang('aboutus.dream1Title')</h4>
                         <div class="why-explain top top-4">
-                            <p>@lang('aboutus.dream4')</p>
+                            <p>@lang('aboutus.dream1')</p>
                         </div>
                     </div>
                 </div>
                 <figure class=why-us-image>
-                    <img class="img-responsive center-block hidden-xs" src="assets/images/about-us/association.jpeg">
+                    <img class="img-responsive center-block hidden-xs" src="assets/images/about-us/association1.jpg">
                 </figure>
                 
         </div>
@@ -171,19 +171,8 @@
             </header>
             <div class=section-content>
                 <div class=row>
-                    <div class=col-sm-4>
-                        <div class=service>
-                           <!-- <div class="service-icon text-center">
-                                <span class=ion-ios-albums-outline></span>
-                            </div>
-                            <div class=about-service>
-                                <h4 class=text-center>Responsive Design</h4>
-                                <p class=text-center>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
-                                    ex eget sollicitudin eget.</p>
-                            </div> -->
-                        </div>
-                    </div>
-                    <div class=col-sm-4>
+                   
+                    <div class=col-sm-12>
                         <div class=service>
                             <div class="service-icon text-center">
                             <img src="assets/images/why-choose-us/service.jpg">
@@ -193,18 +182,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class=col-sm-4>
-                        <div class=service>
-                           <!-- <div class="service-icon text-center">
-                                <span class=ion-ios-game-controller-b-outline></span>
-                            </div>
-                            <div class=about-service>
-                                <h4 class=text-center>Game Development</h4>
-                                <p class=text-center>Praesent dapibus eleifend aug eget sollicitudin velit malesuada Aliquam blandit diam feugiat
-                                    ex eget sollicitudin eget.</p>
-                            </div> -->
-                        </div>
-                    </div>
                 </div>
         </div>
     </section>
@@ -212,7 +189,7 @@
         <div class=container>
             <div class=call-to-action>
                 <div class=cta-text>@lang('services.brandTitle')</div>
-                <a class="btn btn-default-o" href="apply">@lang('nav.apply')</a>
+                <a class="btn btn-default-o btn-lg" href="apply">@lang('nav.apply')</a>
             </div>
         </div>
     </div>
@@ -359,22 +336,25 @@
             <div class=section-content>
                 <div id=client-carousel class=owl-carousel>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/compagny.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/champi bio.jpeg">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/ong.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/SAVHE.jpg">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/phd.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/darmoticslogo.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/school.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/Logo-YECE.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/ong.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/darmoticslogo.png">
                     </div>
                     <div class="client-image item">
-                        <img class="img-responsive center-block" src="assets/images/clients/compagny.png">
+                        <img class="img-responsive center-block" src="assets/images/clients/SAVHE.jpg">
+                    </div>
+                    <div class="client-image item">
+                        <img class="img-responsive center-block" src="assets/images/clients/champi bio.jpeg">
                     </div>
                 </div>
             </div>
@@ -418,7 +398,7 @@
                                     <address class=contact-info>
                                         <span>@lang('contact.street')</span>
                                         <br>
-                                        <span>@lang('contact.city')</span>,
+                                        <span>@lang('contact.city')</span>
                                         <br>
                                         <span>@lang('contact.country')</span>
                                     </address>
@@ -427,8 +407,8 @@
                             <div class=col-sm-6>
                                 <div>
                                     <h5>@lang('contact.info')</h5>
-                                    <div class=contact-info>@lang('contact.local'): ( +2112) x xx xx xx xx
-                                        <br>@lang('contact.mobile'): (+212) x xx xx xx xx
+                                    <div class=contact-info>
+                                        @lang('contact.mobile'): +212 6 07 93 62 41
                                         <br>yeceafrica@gmail.com</div>
                                 </div>
                             </div>
