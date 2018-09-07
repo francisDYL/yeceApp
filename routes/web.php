@@ -25,3 +25,5 @@ Route::get('/dashboard', 'DashboardController@index');
 
 Route::get('/apply', 'ApplicantController@index');
 Route::post('/apply', 'ApplicantController@store');
+
+Route::post('/mailus', 'MailController@mailus');

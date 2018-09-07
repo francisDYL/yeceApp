@@ -42,6 +42,7 @@ class LoginController extends Controller
     public function authenticated(\Illuminate\Http\Request $request)
     {
         // Logic that determines where to send the user
+        logger()->info("Logging From ".Request::ip(),[$request->user()]);
         if($request->user()->hasRole('applicant')){
             return redirect('/');
         }

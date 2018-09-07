@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'news' => 'Nouvelles',
+    'messagesent' => 'Votre message a bien été envoyé, Nous ferons de notre mieux pour vous répondre rapidement!',
     'check'=> 'Choisissez votre langue'
 
 ];

@@ -370,8 +370,11 @@
             <div class=section-content>
                 <div class=row>
                     <div class="col-md-6 col-sm-5">
-                        <form action=""
+                        @include('components.errors')
+                        @include('components.success1')
+                        <form action="mailus"
                               class=contact-form id=contactForm method=post name=contactform role=form>
+                            @csrf
                             <div class=form-group>
                                 <input class=form-control id=name name=name placeholder="@lang('contact.name')" type=text required>
                             </div>
@@ -379,7 +382,7 @@
                                 <input class=form-control id=email name=email placeholder="@lang('contact.email')" type=email required>
                             </div>
                             <div class=form-group>
-                                <textarea class=form-control id=message name=massage placeholder="@lang('contact.message')" rows=5
+                                <textarea class=form-control id=message name=message placeholder="@lang('contact.message')" rows=5
                                           required></textarea>
                             </div>
                             <div id=contactFormResponse></div>

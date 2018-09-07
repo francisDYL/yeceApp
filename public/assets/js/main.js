@@ -175,10 +175,26 @@ $(document).ready(function () {
         var t = $(this).serializeArray(), i = $(this).attr("action"), s = $("#contactFormResponse"), n = $("#cfsubmit"),
             o = n.text();
         return n.text("Sending..."), $.ajax({
-            url: i, type: "POST", data: t, success: function (e) {
-                s.html(e), n.text(o)
-            }, error: function (e) {
-                alert("Error occurd! Please try again")
+            url: i, type: "POST", data: t,
+            success: function (e) {
+                s.html(e)
+            },
+            error: function (e) {
+                $("#contactFormResponse").html("<div class=\"alert alert-danger\">\n<ul>\n" +
+                    "<a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>"+
+                    "<li>  "+e.responseJSON.errors.name+"</li>\n" +
+                    "<li>  "+e.responseJSON.errors.email+"</li>\n" +
+                    "<li>  "+e.responseJSON.errors.message+"</li>\n" +
+                    "</ul>\n</div>")
+
+            },
+            success:function (e){
+                $("#contactFormResponse").html("<div class=\"alert alert-success\">" +
+                    "<a href=\"#\" class=\"close\" data-dismiss=\"alert\" aria-label=\"close\">&times;</a>"+
+                    e +
+                    "</div>"),
+                    n.text(o)
+                //console.log(e)
             }
         }), !1
     })
