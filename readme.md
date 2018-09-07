@@ -31,6 +31,7 @@ Une fois que vous aurez cloner la Master branch dans le repertoire adéquat sur 
     php artisan migrate:refresh --seed
     ```
 - Pour le login en tant qu'administrateur : admin@yeceapp.com et password: secret. Il est recommandé de changer ceci avant d'effectuer les deux commandes précédentes. pour cela rendez-vous dans le fichier `database/seeds/UserTableSeeder.php`
+- Pour l'envoie d'email, après avoir completer le fichier .env par les informations fourni par votre hébergeur ou votre fournisseur de service mail, rendez-vous dans le fichier `app/Http/Controllers/MailController.php` et remplacer `admin@yeceapp.com` par l'adresse mail à laquelle vous voulez recevoir vos emails de contact.
 - à partir d'ici l'applications devrait fonctionner sans problème.
 
 ## Auteurs
