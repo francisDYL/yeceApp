@@ -78,7 +78,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    'locale' => 'fr',
+
 
     /*
     |--------------------------------------------------------------------------
@@ -91,7 +92,7 @@ return [
     |
     */
 
-    'fallback_locale' => 'en',
+    'fallback_locale' => 'fr',
 
     /*
     |--------------------------------------------------------------------------
@@ -150,7 +151,9 @@ return [
         /*
          * Package Service Providers...
          */
-
+        Monarobase\CountryList\CountryListServiceProvider::class,
+        Barryvdh\Debugbar\ServiceProvider::class,
+        Snowfire\Beautymail\BeautymailServiceProvider::class,
         /*
          * Application Service Providers...
          */
@@ -209,6 +212,8 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
 
+        'Countries' => Monarobase\CountryList\CountryListFacade::class,
+        'Debugbar' => Barryvdh\Debugbar\Facade::class,
     ],
 
 ];

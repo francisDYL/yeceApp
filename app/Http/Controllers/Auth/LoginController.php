@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Request;
+
 
 class LoginController extends Controller
 {
@@ -25,7 +27,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -36,4 +38,18 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+    public function authenticated(\Illuminate\Http\Request $request)
+    {
+        // Logic that determines where to send the user
+        logger()->info("Logging From ".Request::ip(),[$request->user()]);
+        if($request->user()->hasRole('applicant')){
+            return redirect('/');
+        }
+        if($request->user()->hasRole('admin')){
+            return redirect('dashboard');
+        }
+    }
+
+
 }

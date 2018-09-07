@@ -14,3 +14,16 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('locale/{locale}', function ($locale) {
+    \Session::put('locale', $locale);
+    return redirect()->back();
+});
+Auth::routes();
+
+Route::get('/dashboard', 'DashboardController@index');
+
+Route::get('/apply', 'ApplicantController@index');
+Route::post('/apply', 'ApplicantController@store');
+
+Route::post('/mailus', 'MailController@mailus');
